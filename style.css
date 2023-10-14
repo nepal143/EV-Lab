@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@800&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&family=Rubik+Iso&family=Varela+Round&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "audiowide";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /* scrollbar-width: none; */
+  overflow-x: hidden  ;
+  margin: auto;
+  background-color: #023C5D;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  min-height: 450px;
+  overflow-x: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #d9edfd;
+}
+
+
+.layer-1 {
+          animation: fore-ground-movement linear 30s infinite both;
+  background: url(2.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 145px;
+}
+
+.layer-2 {
+          animation: fore-ground-movement linear 55s infinite both;
+  background: url(3.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 158px;
+}
+
+.layer-3 {
+          animation: fore-ground-movement linear 75s infinite both;
+  background: url(4.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 468px;
+}
+
+.layer-4 {
+          animation: fore-ground-movement linear 95s infinite both;
+  background: url(5.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 311px;
+}
+
+.layer-5 {
+          animation: fore-ground-movement linear 120s infinite both;
+  background: url(6.png) 0 110% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 222px;
+}
+
+.car-1,
+.car-2 {
+  background: url(car2.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-size: auto 150px;
+}
+
+.scooter-1 , .scooter-2{
+  background: url(scooter.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-size: auto 90px;
+}
+
+.scooter-1{
+    animation: movement_car linear  15s 1s infinite both reverse ;
+}
+.scooter-2{
+  animation: movement_car linear  10s  infinite both reverse ;
+}
+
+.car-1 {
+          animation: movement_car linear 10s 3s infinite both;
+}
+
+.car-2 {
+          animation: movement_car linear 15s infinite both;
+}
+
+@-webkit-keyframes fore-ground-movement {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+
+@keyframes fore-ground-movement {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+@-webkit-keyframes movement_car {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+@keyframes movement_car {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+.logo {
+  margin : 30vh auto;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.tag-line{
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-family: monospace;
+  text-shadow: -2px 2px  rgb(0, 33, 134);
+}
+@media (max-width: 700px) {
+  .logo img {
+    max-width: 90%;
+  }
+}
+
+.nav-container{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  
+}
+nav {
+  background-color: #ffffff7b;
+  position: fixed;
+  overflow: hidden;
+  margin: 15px auto ;
+  /* color: black; */
+  z-index: 100;
+  width: 70vw;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+nav ul {
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav li {
+  padding: 10px 20px;
+}
+@media (max-width: 700px) {
+  nav li {
+    width: 50%;
+    text-align: center;
+  }
+}
+nav a {
+  /* Tilmelding: */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25em;
+  color: black;
+  text-transform: uppercase;
+  /* color: #fff; */
+}
+.about-section{
+  /* margin-top: 100vh ; */
+  background-position-x: -300px;
+  background-position-y: -250px;
+  background-image: url(electricalvehicle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-light{
+  z-index: 2;
+  width: 100vw;
+  min-height: 70vh;
+  /* min-height: 50vh; */
+  display: flex;
+  
+  background-color: #0080cada;
+  justify-content: space-between;
+}
+
+.about-dark{
+  width: 60%;
+  min-height: 70vh;
+  clip-path: polygon(30% 0% , 100% 0% , 100% 100% , 0% 100%);
+  /* background-color: #023C5D; */
+  background-image: url(founder.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 0px;
+}
+.founder-container{
+  position: absolute;
+  z-index: 10;
+  padding-left: 20vw;
+  /* translate: -150px; */
+  width: 100vw;
+  height: 100vh;
+  background-color: #023c5ddc;
+}
+
+.color-dark{
+  color: black;
+}
+.color-light{
+  color: white;
+}
+.About-team{
+  margin-top: 2%;
+}
+.team-image{
+  margin: 2%;
+}
+.team-image img{
+  width: 170px;
+}
+.About-team p{
+  width: 25vw;
+  /* font-size: 0.9em; */
+}
+.read-more{
+  padding: 10px 20px;
+  background-color: #24263C;
+  color: white;
+  width: 150px;
+  margin: 20px;
+  cursor: pointer;
+  /* border-radius: 5px;
+   */
+   border: 3px solid rgb(149, 149, 149);
+  transition: 0.5s;
+}
+.read-more :hover{
+  scale: 0.95;
+}
+.about-dark h2{
+  margin : 30px;
+  color: white;
+}
+.founder-image{
+  margin-right:20px;
+}
+.founder-image img{
+  width: 200px;
+}
+.about-founder{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.text-founder{
+  flex-wrap: wrap;
+  color: white;
+  /* margin-right: 550px; */
+  width: 23%;
+  font-size: 0.9em;
+}
+.founder-name{
+  font-size: 2em;
+}
+.blue{
+  color:#4790BA ;
+}
+.zero-opacity{
+  opacity: 0;
+  transition: 0.5s;
+}
+.one-opacity{
+  opacity: 1;
+  transition: 0.5s;
+  animation: opacity 0.5s linear;
+}
+@keyframes opacity {
+  0%{
+    transform: translateY(100px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+  
+}
+
+.projects{
+  padding: 50px;
+}
+.projects-heading{
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.card{
+  width: 200px;
+  background-color: #08a4ffbb;
+  height: 275px;
+  border-radius: 20px;
+  margin: auto 50px;
+}
+
+.card-active{
+  scale: 1.3;
+}
