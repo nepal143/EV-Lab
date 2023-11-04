@@ -353,6 +353,13 @@ nav a {
   color: white;
   font-size: 2vw;
 }
+.carousel{
+  height: 500px;
+
+}
+.carousel .carousel-item{
+  width: 400px;
+}
 .card-container{
   display: flex;
   justify-content: center;
