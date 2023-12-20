@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+.card-container{
+    margin-top: 100px;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.team-member .role {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.fa {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #000;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.team-member:hover .fa {
+  transform: scale(1.2);
+  color: #007AFF;
+}
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+
+
+        <nav class="width0">
+          <div onclick="toggle()" class="cros"><i style="color: black;" class="toggle1 fa-solid fa-bars  "></i></div>
+          <ul >
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Home</a></li>
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#ABOUT">About</a></li>
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Contact Us</a></li>
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">FAQ's</a></li>
+    
+          </ul>
+        </nav>
+      </div>
+    
+<div class="card-container">
+    <div class="team-section">
+
+
+        <div class="post-name">Team Lead</div>
+        <div class="post-container">
+        <div class="team-member">
+          <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 1">
+          <h3>John Doe</h3>
+          <p class="role">Designer</p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="team-member">
+          <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 2">
+          <h3>John Doe</h3>
+          <p class="role">Developer</p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+
+    <div class="post-name">Second Year Members</div>
+    <div class="post-container">
+        <div class="team-member">
+          <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+          <h3>John Doe</h3>
+          <p class="role">Marketer</p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+
+        <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>        <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>        <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>        <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>        <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>        <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+          <div class="team-member">
+            <img src="https://cutt.ly/Hwn6Y0NL" alt="Team Member 3">
+            <h3>John Doe</h3>
+            <p class="role">Marketer</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+
+
+
+      </div>
+    </div>
+
+
+
+
+</div>
+</body>
+</html>
