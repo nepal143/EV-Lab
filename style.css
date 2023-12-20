@@ -312,7 +312,7 @@ nav a {
 footer{
   background-color: #00486f00;
   height: auto;
-  width: 100vw;
+  width: 90vw;
   /* position: absolute; */
 
   bottom: 0;
@@ -413,12 +413,7 @@ a{
     margin-left: 0;
 }
 
-/* .contacts #fa{
-       margin: 16px 17px 0 35px
-}
-.contacts #yu {
-    margin: 10px 20px;
-} */
+
 @media screen and (max-width:370px) {
   .comment-and-time{
     justify-content: center;
@@ -426,7 +421,6 @@ a{
 }
 .contacts{
   min-width: 200px;
-  /* width: 500px; */
 }
 
 .social-media{
