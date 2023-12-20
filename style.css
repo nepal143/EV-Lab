@@ -202,9 +202,11 @@ body {
 }
 
 nav {
+  overflow: hidden;
   background-color: #ffffff7b;
   position: fixed;
   overflow: hidden;
+  transition: 1s;
   margin: 15px auto;
   /* color: black; */
   z-index: 100;
@@ -270,6 +272,7 @@ nav a {
     width: 55%;
     padding-top: 40px;
     padding-left: 40px;
+    
   }
 
   .cros {
@@ -464,4 +467,17 @@ margin: auto 10px;
   width: 70%;
   text-align: center;
   font-size: 2vw;
+}
+
+.width0{
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+  height: 20px;
+}
+@media  screen and (min-width:800px) {
+    .width0{
+      background-color: rgba(255, 255, 255, 0.348);
+      height: auto;
+      backdrop-filter: blur(4px);
+    }
 }
