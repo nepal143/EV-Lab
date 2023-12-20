@@ -225,3 +225,7 @@ nav a {
   text-transform: uppercase;
   /* color: #fff; */
 }
+.projects-heading{
+  width: 100vw;
+  text-align: center;
+}
