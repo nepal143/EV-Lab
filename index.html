@@ -5,11 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ev Club</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-HZUq5NC+NKS4X1L96V7KBE5Wtq4nY6D5yooUsQn2f3LwsXGjk5g8Q6XTyNKb87qiUpPz/PB4+V2VSvQX+qJ6Qg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -58,59 +55,41 @@
 
 
     <!-- card container starts here -->
-    <div class="carousel" style="height: 100vh;">
-
-      <a href="#one" style="width: auto;" class="carousel-item">
-        <img style="width: 50vw;" src="electricalvehicle.jpg" alt="">
-      </a>
-      <a style="width: 50vw;" href="#two" class="carousel-item">
-        <img src="electricalvehicle.jpg" alt="">
-      </a>
-      <a style="width: 50vw;" href="#three" class="carousel-item">
-        <img src="electricalvehicle.jpg" alt="">
-      </a>
-      <a style="width: 50vw;" href="#four" class="carousel-item">
-        <img src="scooterEV.png" alt="">
-      </a>
-      <a style="width: 50vw;" href="#five" class="carousel-item">
-        <img src="scooterEV.png" alt="">
-      </a>
-      <a style="width: 50vw;" href="#six" class="carousel-item">
-        <img src="electricalvehicle.jpg" alt="">
-      </a>
-
-
-
-
-
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('car.png')"></div>
+        <div class="swiper-slide" style="background-image:url('car2.png')"></div>
+        <div class="swiper-slide" style="background-image:url('bike1.png')" ></div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <!--    card container ends here  -->
-
-
-
-
-
-  </div>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-    integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel').carousel({
-        indicators:true
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
       });
-    });
-  </script>
-  <script>
-
-  </script>
+    </script>
 
 <script src="https://kit.fontawesome.com/ba3380dd9e.js" crossorigin="anonymous"></script>
 </body>

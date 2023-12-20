@@ -300,7 +300,15 @@ nav{
 }
 
 
+/* new work */
+.swiper-container {
+  width: 100vw;
+  height: 50vh;
+}
 
-
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
 
 
