@@ -433,3 +433,41 @@ a{
 margin: auto 10px;
 }
 
+.events-heading{
+  font-size: 5vw ; 
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100vw;
+}
+.event-cards{
+  width: 90vw;
+  margin: auto;
+}
+.event-heading{
+  font-size: 3vw;
+  padding-bottom: 2%;
+}
+.event-card{
+  width: 90vw;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 50px auto;
+
+}
+.ev-tour{
+  background-image: url(assets/mg-ev-tour-at-trinity-leeds-e1697208534381.jpg);
+  background-size:cover;
+  background-color: #023c5d4f;
+  mix-blend-mode:hard-light;
+  background-repeat: no-repeat;
+
+}
+.event-about{
+  width: 70%;
+  text-align: center;
+  font-size: 2vw;
+}
