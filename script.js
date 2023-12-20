@@ -58,3 +58,13 @@ const card_increment = () => {
 }
 
 show_cards();
+
+let cros = document.getElementsByClassName("cros")[0] ; 
+
+let nav = document.getElementsByClassName("nav-link"); 
+
+const toggle = ()=>{
+    if("fa-x" in cros.classList){
+        
+    }
+}

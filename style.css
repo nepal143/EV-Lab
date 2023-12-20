@@ -229,3 +229,78 @@ nav a {
   width: 100vw;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cros{
+  display: none;
+}
+
+
+@media screen and (max-width:800px) {
+  
+.nav-container{
+  width: 30%;
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+}
+nav{
+  height: auto;
+  width: 30%;
+  padding-top: 40px;
+}
+.cros{
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  font-size: 2em;
+  display: unset;
+  cursor: pointer;
+}
+}
+
+
+
+
+
+
