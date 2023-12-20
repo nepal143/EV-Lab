@@ -1,9 +1,8 @@
-@font-face {
-    font-family: ev-font;
-    src: url(/assets/fonts/nasalization-rg.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@800&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&family=Rubik+Iso&family=Varela+Round&display=swap');
+
+
 *{
-    font-family: "ev-font";
+    font-family: "audiowide";
     margin: 0;
     padding: 0;
 
@@ -15,27 +14,11 @@
     background-size: cover;
 
 }
-.navlist{
-    display: flex;
-    list-style: none;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    width: 40vw;
-    z-index: 2;
 
-}
-.navlist a
-{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: medium;
-    
-}
 .events{
     width: 100%;
 }
-.events h3{
+.events h2{
     
     text-align: center;
     padding: 2% 0%;
@@ -59,9 +42,6 @@
     .cards{
         width: 100%;
         flex-direction: column;
-    }
-    .navlist{
-        display: none;
     }
     .card{
         margin:5%;

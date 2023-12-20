@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Archive</title>
-    <link rel="stylesheet" href="archive.css">
+    <link rel="stylesheet" href="style.css">
     
   </head>
   <body>
     <div class="wrapper">
-    <nav> 
-        <ul class="navlist">
-           <a href="#Home"> <li class="links">Home</li></a>
-            <a href="#about"><li class="links">About</li></a>
-            <a href="#contactus"><li class="links">Contact Us </li></a>
-            <a href="#faqs"><li class="links">FAQs</li></a>
-        </ul>
-    </nav>
-   
+      <div class="nav-container">
+
+
+        <nav>
+          <div onclick="toggle()" class="cros"><i style="color: black;" class="toggle1 fa-solid fa-bars  "></i></div>
+          <ul >
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Home</a></li>
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#ABOUT">About</a></li>
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Contact Us</a></li>
+            <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">FAQ's</a></li>
+    
+          </ul>
+        </nav>
+      </div>
     <div class="events">
-      <h3>PREVIOUS EVENTS</h3>
+      <h2 >PREVIOUS EVENTS</h2>
       <div class="cards">
       <div class="card">
           <img src="/assets/static/IMG_20221203_124647.jpg" width="100%" height="100%" >
@@ -71,5 +76,7 @@
     
   </div>
 </div>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/ba3380dd9e.js" crossorigin="anonymous"></script>
   </body>
 </html>
